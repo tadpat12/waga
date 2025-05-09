@@ -1,1 +1,2 @@
-"# waga" 
+Kod do wagi
+
