@@ -64,9 +64,9 @@ static void MX_TIM2_Init(void);
 #define SCK_PIN GPIO_PIN_9
 #define SCK_PORT GPIOB
 
-uint32_t tare = 8554506;
-float knownOriginal = 100000;  // in milligram
-float knownHX711 = (168128+169471+169499+177661)/4;
+uint32_t tare = 8554506; //waga pusta
+float knownOriginal = 100000;  // w miligramach
+float knownHX711 = (168128+169471+169499+177661)/4; //waga ze znanym obciążeniem
 int weight;
 
 void microDelay(uint16_t delay)
@@ -164,7 +164,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  weight = weigh();
+	  weight = weigh(); //masa ważonego obiektu
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
